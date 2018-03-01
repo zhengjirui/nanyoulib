@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <!--<com.mingle.widget.ShapeLoadingView-->
+    <!--android:id="@+id/shapeLoadingView"-->
+    <!--android:layout_width="24dp"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="2dp"/>-->
+    <TextView
+        android:id="@+id/shapeLoadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/indication"
+        android:layout_width="30dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/ny_wait_shadow" />
+
+    <TextView
+        android:id="@+id/promptTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:visibility="gone"
+        tool:visibility="visible" />
+
+</merge>

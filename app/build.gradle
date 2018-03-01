@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+//http://blog.csdn.net/aiynmimi/article/details/68944830
+def releaseTime() {
+    return new Date().format("yyyyMMddhhmm", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.nytechnology.nyimlib"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 10027
+        versionName "1.2.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        libkey {
+            keyAlias 'libkey'
+            keyPassword '123456'
+            storeFile file('D:/AndroidNY/NYIMLib/libkey.jks')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.libkey
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //在apk文件后边生成版本号信息
+//    android.applicationVariants.all {
+//        variant ->
+//            variant.outputs.each {
+//                output -> output.outputFile = new File(output.outputFile.parent, "app_" + defaultConfig.versionName + "${releaseTime()}.apk");
+//            }
+//    }
+
+    productFlavors {
+
+//        Offline{
+//            //applicationId "com.xxxx.xxxx.beta"//可以不写。表示这个版本apk的包名，如果没有写这一项，则默认是defaultConfig {}标签下的包名。
+//            manifestPlaceholders = [app_name:"xxxx" ,icon: "@mipmap/ic_launcher_xxxx"]//manifestPlaceholders=[]这项是配置应用的名称或者图标，如果设置了这一项，需要在AndroidManifese.xml的application标签下配置
+//            resValue("string" , "baseUrl",context.getResource().getString(R.string.key))//可以配置一些我们需要的不同的值，第一个参数是变量的类型，第二个参数key，第三个参数是变量的value。具体的使用 (value=context.getResource().getString(R.string.key) )
+//        }
+//        Online{
+////            applicationId "com.xxxx.xxxx.online"
+//            manifestPlaceholders = [app_name:"xxxx" ,icon: "@mipmap/ic_launcher_xxxx"]
+//            resValue("string" , "baseUrl","xxxxxxx")
+//        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':IMKit')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

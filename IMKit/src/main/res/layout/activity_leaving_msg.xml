@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.rong.imkit.leavingmsg.LeavingMsgActivity">
+
+    <include
+        android:id="@+id/base_leaving_layout"
+        layout="@layout/ny_base_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/base_leaving_layout"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <EditText
+            android:id="@+id/et_leaving_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:gravity="top"
+            android:hint="想说点什么(字数500以内)！"
+            android:lines="5"
+            android:padding="5dip"
+            android:textColorHint="#e5e5e5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="联系人姓名："
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_leaving_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_edittext"
+            android:gravity="top"
+            android:hint="姓名"
+            android:lines="1"
+            android:padding="5dip"
+            android:textColorHint="#e5e5e5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="联系方式："
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_leaving_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_edittext"
+            android:gravity="top"
+            android:hint="电话/手机"
+            android:lines="1"
+            android:padding="5dip"
+            android:textColorHint="#e5e5e5"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/ny_leaving_btn_bg"
+        android:onClick="onLeaveMsg"
+        android:text="留     言"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

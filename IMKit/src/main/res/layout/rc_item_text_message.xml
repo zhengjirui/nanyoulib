@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.rong.imkit.widget.AutoLinkTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/RCTheme.Message.TextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColorLink="#2972ab"
+    android:maxWidth="235dp"
+    android:paddingLeft="9dp" />
+<!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="235dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+    <!---->
+    <!--<View-->
+        <!--android:id="@+id/ny_view_line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dip"-->
+        <!--android:layout_margin="3dip"-->
+        <!--android:background="@color/rc_conversation_list_divider_color"/>-->
+<!--</LinearLayout>-->
+
+

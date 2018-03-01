@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/layout_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:layout_margin="10dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip"
+            android:singleLine="true"
+            android:text="a2f9fca429c918d0a4b8d3096a0298aca91a88f7"
+            android:hint="请输入..."
+            />
+        <!--a2f9fca429c918d0a4b8d3096a0298aca91a88f7-->
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:layout_margin="10dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip"
+            android:singleLine="true"
+            android:text="d54082ea0529fef4145113d2814c3bf6fb3b8f524f7a3e3b14ec88e5c1408e63df3f15690bf936f8"
+            android:hint="请输入..."
+            />
+
+
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:layout_margin="10dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip"
+            android:singleLine="true"
+            android:text="http://ng.boy01.com/icon/kefu.png"
+            android:hint="请输入..."
+            />
+
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:layout_margin="10dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip"
+            android:singleLine="true"
+            android:text="2000"
+            android:hint="请输入..."
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nangua_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:text="点我达客服"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <ImageView
+        android:id="@+id/icon_nanlua_logo_img"
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:src="@drawable/icon_dwd"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="200dp"
+        android:layout_height="36dip"
+        android:background="@drawable/bg_edittext"
+        android:padding="5dip"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="请输入账户："
+        android:layout_marginBottom="37dp"
+        android:layout_alignBottom="@+id/icon_nanlua_logo_img"
+        android:layout_alignLeft="@+id/find_service"
+        android:layout_alignStart="@+id/find_service" />
+
+    <Button
+        android:id="@+id/find_service"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="进入客服"
+        android:background="@drawable/ny_btn"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickStartHome"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_above="@+id/textView"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/linearLayout">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/my_server_img"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/work_evaluate"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/my_server_img"
+                android:layout_toRightOf="@+id/my_server_img"
+                android:textColor="@color/white"
+                android:text="我的客服"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:text="更多服务  触手可及"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:text="版本号：1.0.0"
+        android:id="@+id/textView" />
+
+</RelativeLayout>
