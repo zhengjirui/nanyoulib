@@ -16,12 +16,12 @@
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\layout\\rc_dialog_popup_prompt.xml"
     },
     {
-        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\layout\\rc_wi_block_popup.xml",
-        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\layout\\rc_wi_block_popup.xml"
-    },
-    {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\layout\\ny_activity_conversation.xml",
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\layout\\ny_activity_conversation.xml"
+    },
+    {
+        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\layout\\rc_wi_block_popup.xml",
+        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\layout\\rc_wi_block_popup.xml"
     },
     {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",

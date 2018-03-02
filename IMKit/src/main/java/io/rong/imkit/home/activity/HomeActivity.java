@@ -447,9 +447,8 @@ public class HomeActivity extends BaseActivity implements OnRefreshListener {
             String title = attrBean15.getTitle();
 
             SharedUtil.put("kefu_name", kefu_name);//标题
-            String vis_iconHttp = (String) SharedUtil.get("vis_icon", "");
 
-            if(vis_iconHttp.equalsIgnoreCase("")){
+            if(this.visitor_img != null && !this.visitor_img.equalsIgnoreCase("")){
                 SharedUtil.put("vis_icon", vis_icon);//访客头像
             }
 

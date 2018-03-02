@@ -29,6 +29,8 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+import static io.rong.imkit.constant.Constant.HOST;
+
 
 /**
  * Created by 18513 on 2017/12/13.
@@ -234,7 +236,7 @@ public class HttpManger {
         if (url != null && !url.equalsIgnoreCase("")
                 && json != null && !json.equalsIgnoreCase("")) {
             this.httpLisenter = httpLisenter;
-            Request request = createRequest(url, JSON, json);
+            Request request = createRequest(HOST + url, JSON, json);
             enqueue(request);
         } else {
             Log.e(TAG, "请检查url和json");

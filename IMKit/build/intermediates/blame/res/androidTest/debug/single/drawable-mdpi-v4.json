@@ -56,12 +56,12 @@
         "source": "C:\\Users\\18513\\.android\\build-cache\\3c28b1e2a53ed68c5151aadaa7431a32079b2b28\\output\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notification_bg_normal.9.png",
-        "source": "C:\\Users\\18513\\.android\\build-cache\\3c28b1e2a53ed68c5151aadaa7431a32079b2b28\\output\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
-    },
-    {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png",
         "source": "C:\\Users\\18513\\.android\\build-cache\\3c28b1e2a53ed68c5151aadaa7431a32079b2b28\\output\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\18513\\.android\\build-cache\\3c28b1e2a53ed68c5151aadaa7431a32079b2b28\\output\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",

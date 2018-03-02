@@ -8,12 +8,12 @@
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\drawable\\rc_ic_location.xml"
     },
     {
-        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext.xml",
-        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\drawable\\bg_edittext.xml"
-    },
-    {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\drawable\\ny_circle_switch_bg.xml",
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\drawable\\ny_circle_switch_bg.xml"
+    },
+    {
+        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext.xml",
+        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\drawable\\bg_edittext.xml"
     },
     {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\drawable\\ny_trans_bg.png",
@@ -44,12 +44,12 @@
         "source": "C:\\Users\\18513\\.android\\build-cache\\3c28b1e2a53ed68c5151aadaa7431a32079b2b28\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext_normal.xml",
-        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\drawable\\bg_edittext_normal.xml"
-    },
-    {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\drawable\\ny_select.png",
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\drawable\\ny_select.png"
+    },
+    {
+        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext_normal.xml",
+        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\src\\main\\res\\drawable\\bg_edittext_normal.xml"
     },
     {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",

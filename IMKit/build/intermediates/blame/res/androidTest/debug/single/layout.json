@@ -4,16 +4,16 @@
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_fr_dialog_alter.xml"
     },
     {
-        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_camera.xml",
-        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_camera.xml"
+        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\18513\\.android\\build-cache\\3c28b1e2a53ed68c5151aadaa7431a32079b2b28\\output\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_cs_alert_robot_evaluation.xml",
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_cs_alert_robot_evaluation.xml"
     },
     {
-        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\18513\\.android\\build-cache\\3c28b1e2a53ed68c5151aadaa7431a32079b2b28\\output\\res\\layout\\abc_search_view.xml"
+        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_camera.xml",
+        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_camera.xml"
     },
     {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_input_menus.xml",
@@ -40,16 +40,16 @@
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ext_emoticon_tab_item.xml"
     },
     {
-        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_list.xml",
-        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_public_service_list.xml"
+        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_voice_message.xml",
+        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_voice_message.xml"
     },
     {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_wi_file_list_adapter.xml",
         "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_wi_file_list_adapter.xml"
     },
     {
-        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_voice_message.xml",
-        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_voice_message.xml"
+        "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_list.xml",
+        "source": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_public_service_list.xml"
     },
     {
         "merged": "D:\\AndroidNY\\NYIMLib\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_fragment_base_setting.xml",
