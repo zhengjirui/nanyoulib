@@ -327,6 +327,7 @@ public class ConversationActivity extends BaseActivity {
             int type = customerStateLisenter.getType();
             if(type == -1){//客服挂断
                 SharedUtil.put("CustomerIsLink",false);
+                NyUtiles.showLog(TAG,"挂断！");
             }
 
             if(type == 1){
@@ -334,8 +335,8 @@ public class ConversationActivity extends BaseActivity {
                 if(isTransfer){//转接成功
                     this.kf_id = customerStateLisenter.getKf_id();
                     this.session_id = customerStateLisenter.getSession_id();
+                    SharedUtil.put("CustomerIsLink",true);//保持客服链接为true，断开为false（进入到聊天界面为链接状态）
                     SharedUtil.put("CONVERSATION",true);//标记会话是否已连接，true代表链接
-//                    SharedUtil.put("CustomerIsLink",true);//保持客服链接为true，断开为false（进入到聊天界面为链接状态）
                     fragment.insertintoinfo("已转接!",this.mTargetId,this.user_id);
                     NyUtiles.showLog(TAG,"已转接");
                 }else {//转接中

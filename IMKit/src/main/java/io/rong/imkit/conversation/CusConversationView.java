@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.google.gson.Gson;
 
@@ -28,6 +29,7 @@ import io.rong.imkit.home.activity.HomeActivity;
 import io.rong.imkit.home.bean.MsgTypeStaffBean;
 import io.rong.imkit.mention.RongMentionManager;
 import io.rong.imkit.messages.EmojiTextMessage;
+import io.rong.imkit.plugin.IPluginModule;
 import io.rong.imkit.request.HttpManger;
 import io.rong.imkit.waitqueue.activity.WaitQueueActivity;
 import io.rong.imlib.IRongCallback;
@@ -60,18 +62,31 @@ public class CusConversationView extends CusConversationFragment implements Http
     }
 
     @Override
+    public void onPluginToggleClick(View v, ViewGroup extensionBoard) {
+        //验证是否跟客服链接
+        if(vertifyConnect()){
+            return;
+        }
+        super.onPluginToggleClick(v, extensionBoard);
+
+    }
+
+    @Override
+    public void onPluginClicked(IPluginModule pluginModule, int position) {
+        //验证是否跟客服链接
+        if(vertifyConnect()){
+            return;
+        }
+        super.onPluginClicked(pluginModule, position);
+    }
+
+    @Override
     public void onSendToggleClick(View v, String text1) {
-
-        if(!(boolean)SharedUtil.get("CONVERSATION",false)){
-            ConversationActivity context = (ConversationActivity) getContext();
-            insertintoinfo("转接中,请稍后！",context.getmTargetId(),context.getUser_id());
+        //验证是否跟客服链接
+        if(vertifyConnect()){
             return;
         }
 
-        if(!(boolean)SharedUtil.get("CustomerIsLink",false)){
-            requestHttp();
-            return;
-        }
 
         String text = regMatcher(text1);//正则过滤
         if (!text.equalsIgnoreCase("") && !TextUtils.isEmpty(text) && !TextUtils.isEmpty(text.trim())) {
@@ -91,6 +106,21 @@ public class CusConversationView extends CusConversationFragment implements Http
         } else {
             RLog.e("CusConversationFragment", "text content must not be null");
         }
+    }
+
+    private boolean vertifyConnect(){
+        if(!(boolean)SharedUtil.get("CONVERSATION",false)){
+            ConversationActivity context = (ConversationActivity) getContext();
+            insertintoinfo("转接中,请稍后！",context.getmTargetId(),context.getUser_id());
+            return true;
+        }
+
+        if(!(boolean)SharedUtil.get("CustomerIsLink",false)){
+            requestHttp();
+            return true;
+        }
+
+        return false;
     }
 
     public String regMatcher(String text){

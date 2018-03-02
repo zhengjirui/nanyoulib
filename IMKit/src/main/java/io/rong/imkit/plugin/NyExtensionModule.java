@@ -13,7 +13,7 @@ public class NyExtensionModule extends DefaultExtensionModule {
     @Override
     public List<IPluginModule> getPluginModules(Conversation.ConversationType conversationType) {
         List<IPluginModule>  pluginModuleList = new ArrayList();
-        ImagePlugin image = new ImagePlugin();
+        ImagePlugin image = new CusEvaluatePlugin();
         EvaluatePlugin evaluatePlugin = new EvaluatePlugin();
         pluginModuleList.add(image);
 //        pluginModuleList.add(evaluatePlugin);
