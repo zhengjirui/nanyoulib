@@ -136,7 +136,7 @@ public class MainActivity extends BaseActivity implements HttpLisenter{
                 intent.putExtra("appId",et1.getText().toString());
                 break;
             case "2"://测试
-                intent.putExtra("appId","c68 d893a73916d02d06eb0d8bff3544783745b46");
+                intent.putExtra("appId","c68d893a73916d02d06eb0d8bff3544783745b46");
                 break;
             case "3"://生产
                 intent.putExtra("appId","61a3407c1055a086b003311752081989b8feeff8");

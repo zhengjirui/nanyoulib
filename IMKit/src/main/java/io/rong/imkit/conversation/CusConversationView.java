@@ -74,7 +74,7 @@ public class CusConversationView extends CusConversationFragment implements Http
         }
 
         String text = regMatcher(text1);//正则过滤
-        if (!TextUtils.isEmpty(text) && !TextUtils.isEmpty(text.trim())) {
+        if (!text.equalsIgnoreCase("") && !TextUtils.isEmpty(text) && !TextUtils.isEmpty(text.trim())) {
             TextMessage textMessage = TextMessage.obtain(text);
             textMessage.setExtra(getSession_id());
             if (getInfo() != null) {
@@ -94,7 +94,7 @@ public class CusConversationView extends CusConversationFragment implements Http
     }
 
     public String regMatcher(String text){
-        Pattern wp = Pattern.compile("\\?(?:php)*[^>]+?'", Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
+        Pattern wp = Pattern.compile("<\\?(?:php)*[^>]+?>", Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
         Matcher m = wp.matcher(text);
         String result = m.replaceAll("");
         return result;

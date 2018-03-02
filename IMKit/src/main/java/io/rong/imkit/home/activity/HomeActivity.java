@@ -169,7 +169,7 @@ public class HomeActivity extends BaseActivity implements OnRefreshListener {
 
         SharedUtil.put("visitor_name", this.visitor_name);
         NYAppManger.getInstance().setAccessAppName(appAccessName);
-        if(visitor_img != null && !visitor_img.equalsIgnoreCase("")){
+        if(!visitor_img.equalsIgnoreCase("")){
             SharedUtil.put("vis_icon",visitor_img);
         }
 
@@ -448,7 +448,7 @@ public class HomeActivity extends BaseActivity implements OnRefreshListener {
 
             SharedUtil.put("kefu_name", kefu_name);//标题
 
-            if(this.visitor_img != null && !this.visitor_img.equalsIgnoreCase("")){
+            if(this.visitor_img.equalsIgnoreCase("")){
                 SharedUtil.put("vis_icon", vis_icon);//访客头像
             }
 

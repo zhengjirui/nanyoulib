@@ -11,6 +11,7 @@ import io.rong.imageloader.core.assist.ImageScaleType;
 import io.rong.imageloader.core.display.RoundedBitmapDisplayer;
 import io.rong.imkit.R;
 import io.rong.imkit.Utils.NyUtiles;
+import io.rong.imkit.Utils.SharedUtil;
 import io.rong.imkit.base.BaseRecyclerViewHolder;
 import io.rong.imkit.home.bean.MsgTypeBean;
 
@@ -35,7 +36,8 @@ public class MsgTypeHeaderAdapter extends BaseRecyclerViewHolder<MsgTypeBean.Msg
 
     @Override
     public void bindHolder(final MsgTypeBean.MsgTypeHeaderBean msgTypeHeaderBean) {
-        String header_img_url = msgTypeHeaderBean.getHeader_img_url();
+//        String header_img_url = msgTypeHeaderBean.getHeader_img_url();
+        String header_img_url = (String) SharedUtil.get("vis_icon","");
         ImageLoader.getInstance().displayImage(header_img_url,msgtype_header_img ,new DisplayImageOptions.Builder()
 //                .showImageForEmptyUri(R.drawable.ny_loading_error)
                 .showImageOnFail(R.drawable.ny_loading_error)
